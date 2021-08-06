@@ -7,13 +7,18 @@ os.chdir("F:\project\오션_2021")
 
 wd = webdriver.Chrome(r'F:\project\오션_2021\chromedriver.exe')
 
-A=list(map(float,input().split()))
+f=open(".\latlong.txt",'r')
 
-slat, slon=A[0],A[1]
+A=[]
+for i in range(4):
+    line=f.readline()
+    A.append(line)
+f.close()
 
-B=list(map(float,input().split()))
-
-elat, elon=B[0],B[1]
+slat=float(A[0].rstrip('\n'))
+slon=float(A[1].rstrip('\n'))
+elat=float(A[2].rstrip('\n'))
+elon=float(A[3].rstrip('\n'))
 
 slat=round(slat,2)
 elat=round(elat,2)
