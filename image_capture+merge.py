@@ -55,11 +55,11 @@ wd.quit()
 
 os.chdir("F:\project\오션_2021\captures")
 
-merged = Image.new('RGB', (929*a,888*b))
+merged = Image.new('RGB', (929*b,888*a))
 
 for i in range(a):
     for j in range(b):
         im = Image.open(str(i)+str(j)+'.png')
-        merged.paste(im, (929*j, 888*(b-1-i)))
+        merged.paste(im, (929*j, 888*(a-1-i)))
 
 merged.save('final.png')
