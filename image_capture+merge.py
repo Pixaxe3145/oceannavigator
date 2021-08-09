@@ -31,10 +31,10 @@ londiff=(elon-slon)//1.25
 llat=[]
 llon=[]
 
-for i in range(0,int(londiff)):
+for i in range(0,int(londiff)+1):
     llon.append(slon+1.25*i)
     
-for i in range(0,int(latdiff)):
+for i in range(0,int(latdiff)+1):
     llat.append(slat+1.25*i)
 
 a=len(llat)

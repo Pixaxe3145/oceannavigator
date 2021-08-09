@@ -3,7 +3,7 @@ from urllib.request import Request
 from bs4 import BeautifulSoup
 
 hdr={'User-Agent':'Mozilla/5.0'} 
-url="https://earth.nullschool.net/ko/#current/ocean/primary/waves/overlay=currents/orthographic=-175.40,20.32,639/loc=163.858,7.318"
+url="https://earth.nullschool.net/ko/#current/wind/surface/level/orthographic/loc=141.898,35.943"
 
 req=Request(url,headers=hdr)
 html=urlopen(req).read()

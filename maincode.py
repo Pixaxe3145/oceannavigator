@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-url="https://earth.nullschool.net/ko/#current/ocean/primary/waves/overlay=currents/orthographic=-174.93,20.69,639/loc="
+url="http://localhost:8080/#current/wind/surface/level/orthographic=-175.87,34.66,970"
 
 A=list(map(float,input.split()))
 slatitude, slongitude=A[0],A[1]
