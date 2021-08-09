@@ -2,6 +2,8 @@
 
 Hello. this is my new project, OceanNavigator.
 
+Used libraries: os, selenium, numpy, pandas, pillow, time
+
 Please change the path inside os.chdir()
 
 This project is mainly made out of 6 seperate codes.
