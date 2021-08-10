@@ -30,7 +30,11 @@ This project is mainly made out of 6 seperate codes.
   *IMPORTANT!* Please respect etiquettes and manners when crawling from web.\
 5. data_mod.py\
   This code reads "final_map.xlsx" and "final_current.xlsx".\
-  It modifies map data and rewrites current data as current-x component and current-y component.\
+  It modifies map data and rewrites current data as current-x component and current-y component.
   
-6. shortest_route.py\
+6. image_cropping.py\
+  This code makes the image "crimage.png".\
+  It is made out of image("final.png") and it is needed for visualizing the route. 
+  
+7. shortest_route.py\
   making!
