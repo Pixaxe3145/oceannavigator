@@ -16,11 +16,11 @@ This project is mainly made out of 6 seperate codes.
   This code automatically reades latlong.txt and captures the map in many pices.\
   Then it merges the map into one image, "final.png".\
   *IMPORTANT!* Please respect etiquettes and manners when crawling from web.\
-  *IMPORTANT!* As tested, it seems like google blocks the IP when the captured image number is over than 330.\
+  *IMPORTANT!* As tested, it seems like google blocks the IP when the captured image number is over than 330.
 
 3. image_analize.py\
   This code analizes the image and saves "final_map.xlsx".\
-  The excel file indicates where the ship can go, where it can't go by 0 and 1.\
+  The excel file indicates where the ship can go, where it can't go by 0 and 1.
   
 4. seleniumcrawling.py\
   This code gets current data from a site called nullschoolearth.\
@@ -28,7 +28,6 @@ This project is mainly made out of 6 seperate codes.
   Then it finally saves the data to a list named C.\
   Finally it saves the data into "final_current.xlsx"\
   *IMPORTANT!* Please respect etiquettes and manners when crawling from web.\
-
 5. data_mod.py\
   making!
   
