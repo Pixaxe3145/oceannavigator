@@ -14,6 +14,13 @@ fcur=pd.DataFrame(fcur).to_numpy()
 w=len(fcur[0])
 h=len(fcur)
 
+f=open(".\imcrop.txt",'w')
+
+f.write(str(w))
+f.write("\n")
+f.write(str(h))
+f.close()
+
 fmap=fmap[0:len(fmap)-6]
 hh=len(fmap)-h
 fmap=fmap[hh:]
