@@ -23,8 +23,12 @@ This project is mainly made out of 6 seperate codes.
 4. seleniumcrawling.py\
   This code gets current data from a site called nullschoolearth.\
   It returns a webdriverobject. We can get text data from aa.text.\
-  Then it finally saves the data to a list named C(gonna change later).\
+  Then it finally saves the data to a list named C.\
+  Finally it saves the data into "final_current.xlsx"\
   *IMPORTANT!* Please respect etiquettes and manners when crawling from web.
 
-5. shortest_route.py\
+5. data_mod.py\
+  making!
+  
+6. shortest_route.py\
   making!
