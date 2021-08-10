@@ -26,10 +26,11 @@ This project is mainly made out of 6 seperate codes.
   This code gets current data from a site called nullschoolearth.\
   It returns a webdriverobject. We can get text data from aa.text.\
   Then it finally saves the data to a list named C.\
-  Finally it saves the data into "final_current.xlsx"\
+  Finally it saves the data into "final_current.xlsx".\
   *IMPORTANT!* Please respect etiquettes and manners when crawling from web.\
 5. data_mod.py\
-  making!
+  This code reads "final_map.xlsx" and "final_current.xlsx".\
+  It modifies map data and rewrites current data as current-x component and current-y component.\
   
 6. shortest_route.py\
   making!
