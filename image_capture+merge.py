@@ -1,7 +1,7 @@
-from selenium import webdriver
-import time
-from PIL import Image
 import os
+import time
+from selenium import webdriver
+from PIL import Image
 
 os.chdir("F:\project\오션_2021")
 
@@ -31,10 +31,10 @@ londiff=(elon-slon)//1.25
 llat=[]
 llon=[]
 
-for i in range(0,int(londiff)+1):
+for i in range(0,int(londiff)+2):
     llon.append(slon+1.25*i)
     
-for i in range(0,int(latdiff)+1):
+for i in range(0,int(latdiff)+2):
     llat.append(slat+1.25*i)
 
 a=len(llat)
@@ -42,18 +42,13 @@ b=len(llon)
 
 for i in range(a):
     for j in range(b):
-        lat=str(llat[i])
-        lon=str(llon[j])
         os.chdir("F:\project\오션_2021")
-        url = 'https://www.google.com/maps/@'+lat+','+lon+',10z?hl=ko'
+        url = 'https://www.google.com/maps/@'+str(llat[i])+','+str(llon[j])+',10z?hl=ko'
         wd.get(url)
         time.sleep(0.01)
         os.chdir("F:\project\오션_2021\captures")
         wd.save_screenshot(str(i)+str(j)+'.png')
-        
-wd.quit()
-
-os.chdir("F:\project\오션_2021\captures")
+wd.close()
 
 merged = Image.new('RGB', (929*b,888*a))
 

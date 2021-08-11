@@ -50,20 +50,33 @@ time.sleep(1)
 C=[]
 
 for i in range(a):
-    C.append([])
     for j in range(b):
-        C[i].append([])
-
-for i in range(a):
-    for j in range(b):
-        murl='https://earth.nullschool.net/ko/#current/wind/surface/level/orthographic/loc='
         url=murl+str(llon[j])+','+str(llat[i])
         wd.get(url)
         aa=wd.find_element_by_xpath("//div[@data-name='spotlight-a']/div")
         temp=aa.text
-        temp=str(temp)
-        templ=temp.split()
-        tempf=templ[0]+','+templ[2]
-        C[i][j]=tempf
-        
+        C.append(temp)
 wd.close()
+
+CF=[]
+templl=[]
+
+for i in range(len(C)):
+    temp=C[i]
+    temp=str(temp)
+    templ=temp.split()
+    tempf=templ[0]+','+templ[2]
+    templl.append(tempf)
+    if len(templl)==b:
+        CF.append(templl)
+        templl=[]
+    else:
+        pass
+CFNN=[]
+for i in range(1,len(CF)+1):
+    CFNN.append(CF[len(CF)-i])
+
+CFN=np.array(CFNN)
+CFD=pd.DataFrame(CFN)
+os.chdir("F:\project\오션_2021")
+CFD.to_excel('final_current.xlsx', index=False)
