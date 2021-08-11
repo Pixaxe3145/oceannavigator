@@ -80,3 +80,6 @@ for i in range(len(curx[0])-1):
 
 route.append([0,len(curx[0])])
 route=np.array(route)
+
+route=pd.DataFrame(route)
+route.to_excel('route.xlsx', index=False)
