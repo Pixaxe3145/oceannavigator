@@ -4,7 +4,10 @@ Hello. this is my new project, OceanNavigator.
 
 Used libraries: os, selenium, numpy, pandas, pillow, time
 
-Please change the path inside os.chdir()
+Please change the path inside
+```
+    os.chdir()
+```
 
 This project is mainly made out of 6 seperate codes.
 
@@ -27,7 +30,8 @@ This project is mainly made out of 6 seperate codes.
   It returns a webdriverobject. We can get text data from aa.text.\
   Then it finally saves the data to a list named C.\
   Finally it saves the data into "final_current.xlsx".\
-  *IMPORTANT!* Please respect etiquettes and manners when crawling from web.\
+  *IMPORTANT!* Please respect etiquettes and manners when crawling from web.
+  
 5. data_mod.py\
   This code reads "final_map.xlsx" and "final_current.xlsx".\
   It modifies map data and rewrites current data as current-x component and current-y component.
@@ -37,4 +41,12 @@ This project is mainly made out of 6 seperate codes.
   It is made out of image("final.png") and it is needed for visualizing the route. 
   
 7. shortest_route.py\
-  making!
+  This code reads "final_current.xlsx" and splits the data into x component and y component.\
+  Then it derives the optimal route according to the data and saves the data by "route.xlsx" file.
+  
+8. route_visualiser.py\
+  This code reads "route.xlsx" file and gets the (x,y) data from the file.\
+  Then it replaces the data to all the pixels in the image("final.png").\
+  Finally, it changes the replaced pixels into red and visualises the route.
+  
+# DONE!
